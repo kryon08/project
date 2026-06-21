@@ -51,7 +51,6 @@ class TrainingPlannerApp:
         tk.Button(frame_filter, text="Сбросить", command=self.reset_filter,
                   bg="#f44336", fg="white", activebackground="#da190b", relief=tk.RAISED).grid(row=0, column=5, padx=5)
 
-        # --- Таблица ---
         columns = ("date", "type", "duration")
         self.tree = ttk.Treeview(root, columns=columns, show="headings")
         self.tree.heading("date", text="Дата")
